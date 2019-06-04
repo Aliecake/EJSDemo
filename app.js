@@ -18,6 +18,11 @@ app.get('/posts/', (req, res) => {
     res.render('posts', {posts});
 });
 
+app.get('/enemies', (req, res) => {
+    const enemies = ['The Hound', 'The Mountain'];
+    res.render('enemies', {enemies: enemies})
+}); 
+
 app.get('/fallinlovewith/:thing', (req, res) =>{
     let thing = req.params.thing;
     res.render('love', {thing});

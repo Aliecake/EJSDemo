@@ -1,0 +1,8 @@
+<% include partials/header %>
+<h1>Enemies of the Starks</h1>
+<ul>
+<% enemies.forEach (function(enemy) { %>
+    <li><%= enemy %> </li>
+<% }); %>
+</ul>
+<% include partials/footer %>
