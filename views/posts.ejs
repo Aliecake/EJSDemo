@@ -15,12 +15,12 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>You fell in love with: <%= thing %></h1>
-
-        <% if(thing === "kitty") { %>
-            <p>Good Choice, cats are the best!</p>
-        <% }
-        %>
+        <h1>Starks Post</h1>
+        <ul>
+        <% for (i in posts) { %>
+            <li><%=` ${posts[i].author} - ${posts[i].title} `%> </li>
+        <% } %>
+        </ul>
         <script src="" async defer></script>
     </body>
 </html>
