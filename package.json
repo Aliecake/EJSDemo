@@ -1,0 +1,22 @@
+{
+  "name": "ejsdemo",
+  "version": "1.0.0",
+  "description": "EJSDemo Express Colt Steele Web Dev Bootcamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliecake/EJSDemo.git"
+  },
+  "author": "Lauren Eggers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliecake/EJSDemo/issues"
+  },
+  "homepage": "https://github.com/Aliecake/EJSDemo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
