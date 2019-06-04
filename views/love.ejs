@@ -1,7 +1,8 @@
+<% include partials/header %>
+<h1>You fell in love with: <%= thing %></h1>
 
-        <h1>You fell in love with: <%= thing %></h1>
-
-        <% if(thing === "kitty") { %>
-            <p>Good Choice, cats are the best!</p>
-        <% }
-        %>
+<% if(thing === "kitty") { %>
+    <p>Good Choice, cats are the best!</p>
+<% }
+%>
+<% include partials/footer %>
