@@ -3,9 +3,10 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/img'));
+app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.render('home.ejs');
+    res.render('home');
 });
 
 app.get('/posts/', (req, res) => {
@@ -14,17 +15,17 @@ app.get('/posts/', (req, res) => {
         {title: 'Queen of the North', author: 'Sansa'},
         {title: 'How to warg for no reason', author: 'Bran'}
     ];
-    res.render('posts.ejs', {posts});
+    res.render('posts', {posts});
 });
 
 app.get('/fallinlovewith/:thing', (req, res) =>{
     let thing = req.params.thing;
-    res.render('love.ejs', {thing});
+    res.render('love', {thing});
 });
 
 //404 not found, last get
 app.get('*', (req, res) => {
-    res.render('404.ejs');
+    res.render('404');
 });
 
 app.listen(3000, () => {
