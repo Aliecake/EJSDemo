@@ -9,7 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="app.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,7 +18,7 @@
         <h1>Starks Post</h1>
         <ul>
         <% for (i in posts) { %>
-            <li><%=` ${posts[i].author} - ${posts[i].title} `%> </li>
+            <li><strong><%=` ${posts[i].author} - ${posts[i].title} `%> </strong></li>
         <% } %>
         </ul>
         <script src="" async defer></script>
