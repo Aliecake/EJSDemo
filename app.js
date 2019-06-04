@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+    res.render('home.ejs');
+});
+//404 not found, last get
 app.get('*', (req, res) => {
-    res.send(`404, we're totally firing that new junior dev`);
+    res.render('404.ejs');
 });
 
 app.listen(3000, () => {
