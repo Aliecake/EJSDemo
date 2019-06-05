@@ -7,3 +7,18 @@ body {
     color: rgb(187, 187, 187);
     font-size: 18px;
 }
+a{
+    color: rgb(187, 187, 187);
+}
+a:visited {
+    color: rgb(120, 120, 120);
+}
+h1, h2 {
+    font-family: 'Serif', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Serif';
+    src: url('Game-of-Thrones.ttf') format('truetype');
+}
