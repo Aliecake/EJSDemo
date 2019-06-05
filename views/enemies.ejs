@@ -1,8 +1,13 @@
 <% include partials/header %>
 <h1>Enemies of the Starks</h1>
+<form action="/addenemy" method="POST">
+    <input type="text" name="newenemy" placeholder="Name of Enemy">
+    <button>Add an enemy</button>
+</form>
 <ul>
 <% enemies.forEach (function(enemy) { %>
     <li><%= enemy %> </li>
 <% }); %>
 </ul>
+
 <% include partials/footer %>
