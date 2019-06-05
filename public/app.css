@@ -3,6 +3,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: rgb(175, 175, 175);
-    color: rgb(25,25,25);
+    background-color: rgb(39, 55, 83);
+    color: rgb(187, 187, 187);
+    font-size: 18px;
 }
