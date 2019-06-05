@@ -9,13 +9,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs');
 
+const enemies = ['The Hound', 'The Mountain'];
+
 app.get('/', (req, res) => {
     res.render('home');
 });
 
 app.post('/addenemy', (req, res) => {
-    console.log(req.body)
-    res.send('You have reached the post!');
+    const newEnemy = req.body.newenemy;
+    enemies.push(newEnemy);
+    res.redirect('/enemies');
 });
 
 app.get('/posts/', (req, res) => {
@@ -28,9 +31,8 @@ app.get('/posts/', (req, res) => {
 });
 
 app.get('/enemies', (req, res) => {
-    const enemies = ['The Hound', 'The Mountain'];
     res.render('enemies', {enemies: enemies});
-}); 
+});
 
 app.get('/fallinlovewith/:thing', (req, res) =>{
     let thing = req.params.thing;
