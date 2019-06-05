@@ -39,7 +39,7 @@ app.get('/fallinlovewith/:thing', (req, res) =>{
     res.render('love', {thing});
 });
 
-//404 not found, last get
+//remains last
 app.get('*', (req, res) => {
     res.render('404');
 });
