@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/img'));
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -20,7 +20,7 @@ app.get('/posts/', (req, res) => {
 
 app.get('/enemies', (req, res) => {
     const enemies = ['The Hound', 'The Mountain'];
-    res.render('enemies', {enemies: enemies})
+    res.render('enemies', {enemies: enemies});
 }); 
 
 app.get('/fallinlovewith/:thing', (req, res) =>{
