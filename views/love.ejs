@@ -1,8 +1,11 @@
 <% include partials/header %>
 <h1>You fell in love with: <%= thing %></h1>
 
-<% if(thing === "kitty") { %>
-    <p>Good Choice, cats are the best!</p>
+<% if(thing.toLowerCase() === "viserion") { %>
+    <p>Good Choice, Viserion is the best!</p>
+    <p>"I'm grateful for your loyalty, but my dragon died so that we could be here. If it's all for nothing, then he died for nothing!"</p>
+<% } else { %>
+    Why did you pick <%= thing %> ?!?!
 <% }
 %>
 <% include partials/footer %>
